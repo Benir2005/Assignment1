@@ -33,9 +33,9 @@ public class OurPoint {
 
 
    public OurPoint(double xInit, double yInit ) {
-       double xCoord, yCoord;
-       xCoord = xInit;
-       yCoord = yInit;
+
+       this.xCoord = xInit;
+       this.yCoord = yInit;
    }
 
    
@@ -64,7 +64,8 @@ public class OurPoint {
     * @param y the new value for the x-coordinate of this point
     */
    public void setY (double y) {
-       // this is a stub
+       // sets the y coordinate value
+       yCoord=y;
    }
 
    /**
@@ -82,8 +83,8 @@ public class OurPoint {
     * @return the y-coordinate of this point
     */
    public double getY () {
-       // this is a stub
-       return 0.0;
+       //Returns the y coordinate
+       return yCoord;
    }
     
 

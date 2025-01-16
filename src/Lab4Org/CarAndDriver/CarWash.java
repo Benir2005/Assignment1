@@ -31,7 +31,8 @@ class CarWash {
     * @param car - a car to fill
     */
    public void wash (Car car) {
-       // stub
+       // set the car status to clean
+      car.setBody("clean");
    }
 
 }

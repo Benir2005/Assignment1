@@ -1,8 +1,11 @@
 package Lab4Org.CarAndDriver;
+
+import java.awt.*;
+
 public class Demo {
 
     public static void main (String [] args) {
-	Car  rolls;
+	    Car rolls;
         Driver nigel;
         ServiceStation esso;
 
@@ -23,9 +26,17 @@ public class Demo {
         System.out.println("Rolls: " + rolls.getStatus());
 
         System.out.println("Clean and gas up the Rolls");
-        // Substitute code here to clean the Rolls
-	// and fill it with gas
+        // We instantiate an object of the carwash class and 'clean the car'
+        // We then refill the tank and display the status once again
+
 
         System.out.println("Rolls: " + rolls.getStatus());
+        System.out.println("Cleaning up Rolls..");
+        CarWash mycar=new CarWash();
+        mycar.wash(rolls);
+        System.out.println("Gassing up Rolls...");
+        esso.fill(rolls);
+        System.out.println("Rolls: "+rolls.getStatus());
+
     }
 }
