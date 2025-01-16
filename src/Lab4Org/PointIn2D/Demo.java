@@ -1,0 +1,23 @@
+/** 
+ * This class is used to demonstrate the functionality of the MetricConverter
+ * class.
+ */
+package Lab4Org.PointIn2D;
+
+class Demo {
+   public static void main (String [] args)  {
+      OurPoint q  = new OurPoint (-5,-12); // Coordinates of q are (-5, 12)
+      System.out.println ("The x coordinate of q is: " + q.getX());
+      OurPoint testpoint= new OurPoint(2.3,-7);
+      //To get the displacement between coordinates
+      double xdiff,ydiff;
+      double displacement;
+      xdiff=q.getX()- testpoint.getX();
+      ydiff=q.getY()- testpoint.getY();
+      displacement=Math.sqrt(xdiff*xdiff + ydiff*ydiff);
+      System.out.println("The displacement between point q and the test point is: "+ displacement);
+
+
+   }
+
+}
