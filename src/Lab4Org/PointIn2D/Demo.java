@@ -12,10 +12,16 @@ class Demo {
       //To get the displacement between coordinates
       double xdiff,ydiff;
       double displacement;
+      q.setX(6);
+      q.setY(7);
+      testpoint.setX(10);
+      testpoint.setY(13);
       xdiff=q.getX()- testpoint.getX();
       ydiff=q.getY()- testpoint.getY();
+
       displacement=Math.sqrt(xdiff*xdiff + ydiff*ydiff);
       System.out.println("The displacement between point q and the test point is: "+ displacement);
+
 
 
    }

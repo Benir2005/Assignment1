@@ -114,6 +114,7 @@ public class OurPoint {
 
       System.out.println( "Distance from (0,0) to (3,4) is: " + 
                            distance);
+       System.out.println("The x coordinate of q is : "+q.xCoord);
    }
     // end of commented out lines
    //-----------------------------------------------------
